@@ -1,0 +1,20 @@
+
+python train_bci2a.py     -device 1     -data_type bci2b     -data_path yours     -id 1     -father_path saved_results     -spatial_GCN True     -time_GCN True     -use_kgat True     -use_mamba False     -epochs 100
+
+python train_bci2a.py     -device 1     -data_type bci2a     -data_path  yours    -id 1     -father_path saved_results     -spatial_GCN True     -time_GCN True     -use_kgat True     -use_mamba False     -epochs 100
+
+1、kgat
+-use_kgat Ture
+
+2、mamba
+-use_mamba False
+
+
+3、MTP
+-use_adj_perturbation False
+| name | type | default | description |
+|--------|------|--------|------|
+| `-adj_edge_change_ratio` | float | 0.1 | edge_change_ratio (0.0-1.0) |
+| `-adj_weight_noise_std` | float | 0.1 | std |
+| `-adj_min_edge_weight` | float | 0.01 | min_weight |
+| `-adj_max_edge_weight` | float | 1.0 | max_weight |
