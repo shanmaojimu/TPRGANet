@@ -1,5 +1,4 @@
-# shanmaojimu
-config:
+# Config
 Python version: 3.10.2
 PyTorch version: 2.5.1+cpu
 
